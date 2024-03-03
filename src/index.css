@@ -1,0 +1,13 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+::selection {
+  background-color: #ffae03;
+}
+.container {
+  max-width: 900px;
+  margin: 0 auto;
+  background-color: blue;
+}
