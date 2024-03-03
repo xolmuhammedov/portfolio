@@ -12,7 +12,7 @@
   left: 0;
   width: 100%;
   height: 45%;
-  background-color: red;
+  /* background-color: red; */
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -23,7 +23,7 @@
 
     h5 {
       font-family: "Dosis", sans-serif;
-      letter-spacing: 6px;
+      letter-spacing: 2px;
       font-size: 23px;
       color: #0f1318;
     }
@@ -31,15 +31,65 @@
       margin-top: 3px;
       font-family: "Dosis", sans-serif;
       color: #768090;
-      font-size: 18px;
+      font-size: 19px;
     }
   }
   .right {
     width: 50%;
     height: 100%;
-    background-color: aquamarine;
+    /* background-color: aquamarine; */
+    .text {
+      display: flex;
+      align-items: center;
+      justify-content: end;
+      .inner-text {
+        p {
+          font-family: "Dosis", sans-serif;
+          font-size: 20px;
+          line-height: 30px;
+          .php {
+            position: relative;
+            display: inline;
+            z-index: 1;
+            font-weight: 600;
+          }
+          .php::after {
+            content: "";
+            display: block;
+            height: 5px;
+            background: #ffae03;
+            position: absolute;
+            left: 0;
+            right: 0;
+            bottom: 2px;
+            z-index: -1;
+          }
+          .js {
+            position: relative;
+            display: inline;
+            z-index: 1;
+            font-weight: 600;
+          }
+          .js::after {
+            content: "";
+            display: block;
+            height: 5px;
+            background: #ffae03;
+            position: absolute;
+            left: 0;
+            right: 0;
+            bottom: 2px;
+            z-index: -1;
+          }
+        }
+      }
+    }
+    .second {
+      background-color: green;
+    }
   }
 }
+
 .footer {
   position: absolute;
   right: 0;
