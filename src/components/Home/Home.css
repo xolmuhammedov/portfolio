@@ -1,4 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Dosis:wght@200..800&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Dosis:wght@200..800&family=Nanum+Pen+Script&display=swap");
 .home {
   position: relative;
   width: 100%;
@@ -19,8 +20,6 @@
   .left {
     width: 50%;
     height: 100%;
-    background-color: antiquewhite;
-
     h5 {
       font-family: "Dosis", sans-serif;
       letter-spacing: 2px;
@@ -28,7 +27,7 @@
       color: #0f1318;
     }
     p {
-      margin-top: 3px;
+      margin-top: 8px;
       font-family: "Dosis", sans-serif;
       color: #768090;
       font-size: 19px;
@@ -47,6 +46,7 @@
           font-family: "Dosis", sans-serif;
           font-size: 20px;
           line-height: 30px;
+          font-weight: 500;
           .php {
             position: relative;
             display: inline;
@@ -85,7 +85,34 @@
       }
     }
     .second {
-      background-color: green;
+      margin-top: 18px;
+      float: right;
+      width: 322px;
+      margin-right: 4px;
+      .second-inner {
+        p {
+          font-size: 18px;
+          font-family: "Dosis", sans-serif;
+          font-size: 20px;
+          line-height: 30px;
+          font-weight: 500;
+          #contact {
+            position: relative;
+            z-index: 1;
+          }
+          #contact::after {
+            content: "";
+            display: block;
+            height: 5px;
+            background: #ffae03;
+            position: absolute;
+            left: 0;
+            right: 0;
+            bottom: 2px;
+            z-index: -1;
+          }
+        }
+      }
     }
   }
 }
@@ -97,5 +124,17 @@
   left: 0;
   width: 100%;
   height: 180px;
-  background-color: yellow;
+  /* background-color: #ffae03; */
+  background-color: transparent;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  .text {
+    #happines {
+      font-size: 35px;
+      font-family: "Nanum Pen Script", cursive;
+      font-weight: 400;
+      font-style: normal;
+    }
+  }
 }
