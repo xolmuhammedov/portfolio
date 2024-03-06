@@ -33,7 +33,7 @@ const Home = () => {
       </div>
       <div className="footer">
         <div className="text">
-          <h1 id="happines">Happines is in simpilicity</h1>
+          <h1 id="happines">Happines is in simpilicity.</h1>
         </div>
       </div>
     </div>
